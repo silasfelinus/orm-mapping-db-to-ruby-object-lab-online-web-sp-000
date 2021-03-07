@@ -2,7 +2,6 @@ class Student
   attr_accessor :id, :name, :grade
 
   def self.new_from_db(row)
-    def self.new_from_db(row)
     new_student = self.new  # self.new is the same as running student.new
     new_student.id = row[0]
     new_student.name =  row[1]
@@ -11,7 +10,6 @@ class Student
   end
 
   def self.all
-    def self.all
       sql = <<-SQL
         SELECT *
         FROM students
